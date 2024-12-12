@@ -2,7 +2,7 @@
 
 import { Modal, ModalContent, ModalTrigger } from '@/shared/ui/dialog';
 import { OptimizedImage } from '@/shared/ui/optimize-image';
-import { FormEvent, useState, type ReactNode, useRef } from 'react';
+import { FormEvent, useState, type ReactNode } from 'react';
 import { MailService } from '@/shared/api/mail';
 import { IMaskInput } from 'react-imask';
 import parsePhoneNumber, { isPossiblePhoneNumber } from 'libphonenumber-js';
@@ -26,9 +26,6 @@ export function ConsultationModal({
 }) {
 	const [isValid, setIsValid] = useState<boolean | null>();
 	const [sent, setSent] = useState<boolean>(false);
-
-	// Ref for the IMaskInput
-	const phoneInputRef = useRef<HTMLInputElement>(null);
 
 	const handler = async (e: FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
@@ -58,18 +55,6 @@ export function ConsultationModal({
 		}
 	};
 
-	const handleAccept = (value: string) => {
-		return '0000000';
-	};
-
-	// Function to handle focus event and move the cursor to the start
-	const handleFocus = () => {
-		if (phoneInputRef.current) {
-			// Move the cursor to the start of the input
-			phoneInputRef.current.setSelectionRange(0, 0);
-		}
-	};
-
 	return (
 		<Modal open={open && open} onOpenChange={onOpenChange}>
 			<ModalTrigger asChild={asChild}>{trigger}</ModalTrigger>
@@ -90,7 +75,7 @@ export function ConsultationModal({
 							<div className='popup__form-input'>
 								<p className='popup__input-name'>номер сотового телефона</p>
 								<IMaskInput
-									mask='+7 000 000 00 00' // The fixed part of the mask (with +7)
+									mask='+7 000 000 00 00'
 									className={`popup__input ${isValid === false ? 'invalid' : ''}`}
 									required
 									lazy={false}

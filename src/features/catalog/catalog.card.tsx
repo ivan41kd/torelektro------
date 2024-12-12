@@ -1,4 +1,3 @@
-import { OptimizedImage } from '@/shared/ui/optimize-image';
 import { ProductModal } from './catalog.card-modal';
 import type { TProduct } from './catalog.type';
 import React from 'react';

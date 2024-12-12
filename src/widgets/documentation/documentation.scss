@@ -1,0 +1,77 @@
+.documentation {
+	&__title {
+		font-size: 24px;
+		line-height: 110%;
+		font-weight: 400;
+		height: 50px;
+		margin-bottom: 20px;
+		display: flex;
+		align-items: center;
+	}
+	&__wrapper {
+		border-radius: 5px;
+		background: white;
+		padding: 20px;
+	}
+	&__item {
+		display: grid;
+		grid-template-columns: minmax(0, 815px) minmax(0, 130px) minmax(0, 130px) minmax(0, 50px);
+		-moz-column-gap: 5px;
+		column-gap: 5px;
+	}
+	&__items {
+		display: flex;
+		flex-direction: column;
+		row-gap: 10px;
+	}
+	&__col {
+		background: #f5f5f5;
+		border-radius: 5px;
+		height: 50px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+	}
+	&__col:nth-child(1) {
+		padding-left: 10px;
+	}
+	&__col:not(:nth-child(1)) {
+		justify-content: center;
+	}
+	&__col:nth-last-child(1) {
+		background: #101010;
+		cursor: pointer;
+	}
+	&__item-text {
+		display: flex;
+		font-size: 16px;
+		line-height: 110%;
+		color: #505050;
+	}
+	&__icon {
+		max-width: 17.5px;
+		width: 100%;
+	}
+	@media screen and (max-width: 820px) {
+		&__col:not(:nth-child(1), :nth-child(4)) {
+			display: none;
+		}
+		&__item {
+			row-gap: 5px;
+			grid-template-columns: minmax(0, 265px) minmax(0, 50px);
+		}
+		&__title {
+			font-size: 18px;
+			margin-bottom: 15px;
+			height: 30px;
+		}
+		&__wrapper {
+			max-width: 350px;
+			padding: 15px;
+		}
+		&__item-text {
+			font-size: 14px;
+			line-height: 120%;
+		}
+	}
+}

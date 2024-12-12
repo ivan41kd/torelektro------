@@ -28,7 +28,6 @@
 	}
 	&__text-wrapper {
 		height: 100%;
-		overflow: auto;
 	}
 
 	&__text span {
@@ -48,8 +47,6 @@
 		}
 		&__text-wrapper {
 			font-size: 8px;
-			line-height: normal;
-			padding: 1px;
 		}
 		&__text {
 			font-size: 8px;

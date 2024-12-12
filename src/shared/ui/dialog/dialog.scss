@@ -2,7 +2,7 @@
 	position: fixed;
 	inset: 0;
 	height: 100%;
-	background: rgba(0, 0, 0, 0.8);
+	background: rgba(16, 16, 16, 0.9);
 	z-index: 100;
 }
 .policy::-webkit-scrollbar {
@@ -65,6 +65,8 @@
 	background: none;
 	padding: 0;
 	align-self: flex-end;
+	border: none;
+	outline: none;
 }
 
 .close__icon {

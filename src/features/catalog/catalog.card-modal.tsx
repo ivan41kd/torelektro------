@@ -199,12 +199,9 @@ export function ProductModal({ products, index }: { products: TProduct['items'];
 														key={`product__card-slide-img-${key}`}
 														className='product__card-slide'
 													>
-														<OptimizedImage
+														<img
 															src={val}
 															alt='ТОРЕЛЕКТРО. УДЛИННИТЕЛИ. удлиннители'
-															width={400}
-															height={200}
-															priority
 															className='product__card-img'
 														/>
 													</SwiperSlide>

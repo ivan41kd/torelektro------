@@ -29,13 +29,10 @@ export function CatalogCard({
 		<div className='catalog__card swiper-slide'>
 			<div className='catalog__card-wrapper'>
 				<div className='catalog__card-img-wrapper'>
-					<OptimizedImage
-						alt={`ТОРЕЛЕКТРО. КАРТОЧКА ТОВАРА ${product.title}-${index}`}
-						height={200}
-						width={200}
-						priority
-						className='catalog__card-img'
+					<img
 						src={product.images.main}
+						alt={`ТОРЕЛЕКТРО. КАРТОЧКА ТОВАРА ${product.title}-${index}`}
+						className='catalog__card-img'
 					/>
 				</div>
 				<div className='catalog__card-info'>

@@ -86,6 +86,9 @@
 			line-height: normal;
 			display: none;
 		}
+		&__wrapper {
+			padding: 15px;
+		}
 		&__title.mobile {
 			display: flex;
 		}

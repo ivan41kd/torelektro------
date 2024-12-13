@@ -41,6 +41,9 @@
 	&__col:nth-last-child(1) {
 		background: #101010;
 		cursor: pointer;
+		padding-left: 0;
+		justify-content: center;
+		padding-bottom: 6px;
 	}
 	&__item-text {
 		display: flex;

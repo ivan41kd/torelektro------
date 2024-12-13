@@ -116,7 +116,9 @@
 		opacity: 1;
 		transition: 0.3s;
 	}
-
+	&__card-img-slider {
+		border-radius: 5px;
+	}
 	&__next-variant-info,
 	&__prev-variant-info {
 		position: absolute;
@@ -217,6 +219,7 @@
 		height: 100%;
 		-o-object-fit: cover;
 		object-fit: cover;
+		border-radius: 5px;
 	}
 	&__card-wrapper {
 		display: flex;

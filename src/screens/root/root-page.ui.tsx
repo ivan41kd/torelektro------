@@ -38,9 +38,8 @@ export function RootPage() {
 		<>
 			<ReactLenis
 				options={{
-					lerp: 200,
-
-					touchMultiplier: 0.1,
+					lerp: 6.5,
+					wheelMultiplier: 1.5,
 				}}
 				root
 			>

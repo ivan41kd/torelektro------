@@ -33,16 +33,18 @@ export function RootPage() {
 			observer.disconnect();
 		};
 	}, [lenis]);
+	const lenisOptions = {
+		lerp: 0.2,
+
+		wheelMultiplier: 0.2,
+		touchMultiplier: 0.1,
+		smooth: true,
+		smoothTouch: true,
+	};
 
 	return (
 		<>
-			<ReactLenis
-				options={{
-					lerp: 6.5,
-					wheelMultiplier: 1.5,
-				}}
-				root
-			>
+			<ReactLenis options={lenisOptions} root>
 				<Header />
 				<main className='main'>
 					<Hero />

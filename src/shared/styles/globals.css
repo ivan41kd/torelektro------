@@ -47,6 +47,14 @@ html {
 	text-size-adjust: none;
 	scroll-behavior: smooth;
 }
+html.lenis,
+html.lenis body {
+	height: auto;
+}
+
+.lenis.lenis-smooth {
+	scroll-behavior: auto !important;
+}
 
 /* Remove default margin in favour of better control in authored CSS */
 body,

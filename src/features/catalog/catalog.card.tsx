@@ -1,3 +1,4 @@
+import { OptimizedImage } from '@/shared/ui/optimize-image';
 import { ProductModal } from './catalog.card-modal';
 import type { TProduct } from './catalog.type';
 import React from 'react';
@@ -28,10 +29,12 @@ export function CatalogCard({
 		<div className='catalog__card swiper-slide'>
 			<div className='catalog__card-wrapper'>
 				<div className='catalog__card-img-wrapper'>
-					<img
+					<OptimizedImage
 						src={product.images.main}
 						alt={`ТОРЕЛЕКТРО. КАРТОЧКА ТОВАРА ${product.title}-${index}`}
 						className='catalog__card-img'
+						width={340}
+						height={340}
 					/>
 				</div>
 				<div className='catalog__card-info'>

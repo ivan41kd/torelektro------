@@ -1,4 +1,4 @@
-import RootPage from '../../src/screens/root';
+import RootPage from '../../src/screens/root/root-page.ui';
 
 describe('<RootPage />', () => {
 	it('should render and display expected content', () => {

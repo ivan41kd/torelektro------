@@ -24,11 +24,9 @@ export function RootPage() {
 			}
 		}
 
-		// Следим за изменениями DOM для отслеживания состояния модального окна
 		const observer = new MutationObserver(handleModalState);
 		observer.observe(document.body, { childList: true, subtree: true, attributes: true });
 
-		// Первоначальная проверка
 		handleModalState();
 
 		return () => {

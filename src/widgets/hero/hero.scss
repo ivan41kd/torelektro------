@@ -1,6 +1,6 @@
 .intro {
 	height: 650px;
-	margin-top: 85px;
+	margin-top: 84px;
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
@@ -147,8 +147,8 @@
 		cursor: pointer;
 	}
 	&__disclaimer-close-icon {
-		width: 20px;
-		height: 20px;
+		width: 12.19px;
+		height: 12.19px;
 	}
 
 	@media screen and (max-width: 820px) {
@@ -243,6 +243,10 @@
 		}
 		&__bottom {
 			margin-bottom: 0;
+		}
+		&__disclaimer-close {
+			max-width: 12.19px;
+			height: 12.19px;
 		}
 	}
 }

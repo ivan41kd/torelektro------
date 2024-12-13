@@ -86,7 +86,7 @@ export function Catalog() {
 								</svg>
 								<div className='catalog__category-info-texts'>
 									<p className='catalog__category-info-name'>
-										удлинители с медным кабелем «КГ<span>тп</span> ХЛ»
+										удлинители с медным кабелем «КГ<span>тп</span>-ХЛ»
 									</p>
 									<p className='catalog__category-info-subtitle'>
 										нажмите, чтобы перейти

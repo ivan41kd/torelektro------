@@ -1,6 +1,5 @@
 'use client';
 
-import { useState } from 'react';
 import Image from 'next/image';
 
 interface OptimizedImageProps {
@@ -20,8 +19,6 @@ export function OptimizedImage({
 	priority = true,
 	className,
 }: OptimizedImageProps) {
-	const [isLoading, setLoading] = useState(true);
-
 	return (
 		<Image
 			src={src}
@@ -30,8 +27,7 @@ export function OptimizedImage({
 			height={height}
 			priority={priority}
 			quality={90}
-			className={`image ${isLoading ? 'image__loading' : ''} ${className ? className : ''}`}
-			onLoadingComplete={() => setLoading(false)}
+			className={`${className ? className : ''}`}
 			sizes='(max-width: 640px) 100vw,
                (max-width: 1024px) 50vw,
                100vw'

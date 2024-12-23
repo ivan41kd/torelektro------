@@ -17,7 +17,7 @@ export function OptimizedImage({
 	alt,
 	width,
 	height,
-	priority = false,
+	priority = true,
 	className,
 }: OptimizedImageProps) {
 	const [isLoading, setLoading] = useState(true);
